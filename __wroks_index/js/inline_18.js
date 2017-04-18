@@ -1,0 +1,1 @@
+ $(document).ready(function () { var myLatLng = {lat: 50.3844162, lng: 30.4872015}; var map = new google.maps.Map(document.getElementById('map'), { zoom: 17, center: myLatLng }); var marker = new google.maps.Marker({ position: myLatLng, map: map, title: '', icon: '/static/alterair/img/map-marker.png', }); }); 
