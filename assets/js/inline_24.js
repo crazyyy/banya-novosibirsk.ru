@@ -1,1 +1,0 @@
- $(".share-button").on('click', function () { var publish = "alterair.ua" + $(this).closest('.w_card').find('.link-to-share').attr('href'); $(this).attr("data-share-url", publish); }); $('.share-button').simpleSocialShare(); 

@@ -1,1 +1,0 @@
- (function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.src = "https://widget.sender.mobi/build/init.js"; fjs.parentNode.insertBefore(js, fjs, 'sender-widget'); })(document, 'script');

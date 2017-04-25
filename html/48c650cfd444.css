@@ -17727,7 +17727,6 @@ a.menu-item {
 }
 
 .product-card {
-  float: none;
   height: 100%
 }
 
@@ -18060,7 +18059,7 @@ textarea.checkout-textarea {
     height: 0;
     position: absolute;
     border-top: 1px solid #CCCCCC;
-    top: 26px
+    top: 34px
   }
 }
 
@@ -20795,7 +20794,7 @@ a.h4_normal:hover {
 .ctab_mask_content {
   display: block;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -20913,7 +20912,8 @@ a.h4_normal:hover {
     position: relative;
     padding: 0;
     margin: auto;
-    top: 0
+    top: 0;
+    right: 0!important
   }
   .ctab_form {
     float: none;
@@ -20938,6 +20938,10 @@ a.h4_normal:hover {
   color: #444444
 }
 
+.profile-tab a.active {
+  color: #4da6ff
+}
+
 .user-summary {
   font-size: 18px
 }
@@ -20958,6 +20962,19 @@ a.h4_normal:hover {
   color: #ff7474;
   font-size: 18px;
   font-weight: bold
+}
+
+.ch-label {
+  display: block;
+  line-height: 1.6rem;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 16px;
+  font-style: italic
+}
+
+.text-center>.img-responsive {
+  margin: 0 auto
 }
 
 .paginate {
