@@ -1,0 +1,2 @@
+$(document).on("submit",'form[name="compare_form"]',function(e){e.preventDefault();var s=$(this);return $.ajax({url:s.attr("action"),data:s.serialize(),success:function(e){"ok"==e.status&&(e.cpl&&($("#compare_link").removeClass("disabled_link"),$("#compare_count").html(e.cpl)),$("#success_message_compare").modal("show"),setTimeout(function(){$("#success_message_compare").modal("hide")},3e3))}}),!1});
+//# sourceMappingURL=maps/inline_12.js.map
