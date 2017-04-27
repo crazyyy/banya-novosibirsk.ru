@@ -1,37 +1,39 @@
 <?php get_header(); ?>
-  <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-      <h1 class="single-title inner-title"><?php the_title(); ?></h1>
-      <?php if ( has_post_thumbnail()) :?>
-        <a class="single-thumb" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-          <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-        </a>
-      <?php endif; ?><!-- /post thumbnail -->
+    <div class="white-layer"></div>
+    <div itemscope="" itemtype="http://schema.org/Article" class="container">
 
-      <span class="date"><?php the_time('d F Y'); ?> <?php the_time('H:i'); ?></span>
-      <span class="author"><?php _e( 'Published by', 'wpeasy' ); ?> <?php the_author_posts_link(); ?></span>
-      <span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'wpeasy' ), __( '1 Comment', 'wpeasy' ), __( '% Comments', 'wpeasy' )); ?></span><!-- /post details -->
+      <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?>
 
-      <?php the_content(); ?>
+      <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-      <?php the_tags( __( 'Tags: ', 'wpeasy' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+        <div class="row">
+          <div class="col-xs-12 col-md-9 col-md-offset-3 text-center">
+            <h1 itemprop="name headline"><?php the_title(); ?></h1>
+          </div>
+        </div>
 
-      <p><?php _e( 'Categorised in: ', 'wpeasy' ); the_category(', '); // Separated by commas ?></p>
+        <div class="row">
+          <div class="article-detail-wrapper">
 
-      <p><?php _e( 'This post was written by ', 'wpeasy' ); the_author(); ?></p>
+            <?php get_sidebar(); ?>
 
-      <?php edit_post_link(); ?>
+            <div class="col-xs-12 col-md-9">
+              <div class="padding-left-15 content" id="publication-content">
+                <div>
+                  <?php the_content(); ?>
+                </div>
 
-      <?php comments_template(); ?>
+                <?php get_template_part('prevnext'); ?>
 
-    </article>
-  <?php endwhile; else: ?>
-    <article>
+              </div><!-- publication-content -->
+            </div>
 
-      <h2 class="page-title inner-title"><?php _e( 'Sorry, nothing to display.', 'wpeasy' ); ?></h2>
+          </div><!--/article-detail-wrapper -->
+        </div>
+      <?php endwhile; endif; ?>
 
-    </article>
-  <?php endif; ?>
-<?php get_sidebar(); ?>
+    </div>
+
+
 <?php get_footer(); ?>

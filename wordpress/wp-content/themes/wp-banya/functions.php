@@ -419,17 +419,14 @@ function single_result() {
 }
 
 // хлебные крошки   http://dimox.name/wordpress-breadcrumbs-without-a-plugin/
-// < ?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ? >
+/* <?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ?> */
 
-// хлебные крошки   http://dimox.name/wordpress-breadcrumbs-without-a-plugin/
-// < ?php if (function_exists('easy_breadcrumbs')) easy_breadcrumbs(); ? >
-//
 function easy_breadcrumbs() {
 
   // Settings
-  $separator          = ' &raquo; ';
-  $breadcrums_id      = 'breadcrumbs';
-  $breadcrums_class   = 'breadcrumbs';
+  $separator          = '';
+  $breadcrums_id      = 'breadcrumb';
+  $breadcrums_class   = 'breadcrumb';
   $home_title         = 'Главная';
 
   // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. product_cat)
@@ -442,7 +439,7 @@ function easy_breadcrumbs() {
   if ( !is_front_page() ) {
 
     // Build the breadcrums
-    echo '<ul id="' . $breadcrums_id . '" class="' . $breadcrums_class . '">';
+    echo '<ul id="' . $breadcrums_id . '" class="' . $breadcrums_class . ' no-margin-bottom">';
 
     // Home page
     echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';
@@ -756,7 +753,7 @@ function disable_emojicons_tinymce( $plugins ) {
 
 
 
-
-
-
 ?>
+
+
+

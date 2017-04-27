@@ -1268,9 +1268,3 @@ $(function() {
     zIndex: 2147483647
   });
 });
-
-$("#share-icons").jsSocials({
-  showLabel: false,
-  showCount: false,
-  shares: ["twitter", "facebook", "googleplus", "linkedin", "vkontakte"]
-});
