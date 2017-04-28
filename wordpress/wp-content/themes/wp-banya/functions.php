@@ -45,13 +45,15 @@ function wpeStyles()  {
 add_action('init', 'wpeHeaderScripts'); // Add Scripts to wp_head
 function wpeHeaderScripts() {
   if (!is_admin()) {
+
+/*
     wp_deregister_script('jquery');
     wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-2.1.0.min.js', array(), '2.1.0');
     wp_enqueue_script('jquery');
 
     wp_register_script('jquery-migrate', get_template_directory_uri() . '/js/jquery-migrate-1.2.1.min.js', array(), '1.2.1');
     wp_enqueue_script('jquery-migrate');
-
+*/
     wp_register_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3');
     wp_enqueue_script('modernizr');
 
@@ -117,7 +119,7 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
+    'items_wrap'      => '<ul class="nav navbar-nav navbar-left">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -140,7 +142,7 @@ function wpeFootNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="footernav">%3$s</ul>',
+    'items_wrap'      => '<ul id="primary-menu" class="nav margin-top-5">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )
@@ -749,11 +751,4 @@ function disable_emojicons_tinymce( $plugins ) {
   }
 }
 
-
-
-
-
 ?>
-
-
-

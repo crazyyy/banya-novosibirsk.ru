@@ -3,38 +3,39 @@
     <div class="container">
       <div class="hidden-xs hidden-sm col-md-12 col-lg-12 header-item">
         <ul id="primary-menu" class="nav margin-top-5">
-          <li id="primary-menu-kondicionirovanie-ventiljacija" class="">
-            <a href="/kondicionirovanie-ventiljacija/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/14c2c55ca6051629a5aa821c2dbbc6fa.png" alt="">
+          <li>
+            <a href="#" class="menu-item ">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/14c2c55ca6051629a5aa821c2dbbc6fa.png" alt="">
               <p>Вентиляция и кондиционирование</p>
             </a>
           </li>
-          <li id="primary-menu-otoplenie" class="">
-            <a href="/otoplenie/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/3956f47ced9b838e05e771c111d74d1c.png" alt="">
+          <li>
+            <a href="#" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/3956f47ced9b838e05e771c111d74d1c.png" alt="">
               <p>Отопление</p>
             </a>
           </li>
-          <li id="primary-menu-alternativnaja-jenergetika" class="">
-            <a href="/alternativnaja-jenergetika/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/b2d6046bfcfcd2245d4f8c3597dff4af.png" alt="">
+          <li>
+            <a href="#" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/b2d6046bfcfcd2245d4f8c3597dff4af.png" alt="">
               <p>Альтернативная энергетика</p>
             </a>
           </li>
-          <li id="primary-menu-vodoprovod-vodoochistka" class="">
-            <a href="/vodoprovod-vodoochistka/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/1f028b7d159cc6f943ed3d0b2943b685.png" alt="">
+          <li>
+            <a href="#" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/1f028b7d159cc6f943ed3d0b2943b685.png" alt="">
               <p>Водоснабжение и водоочистка</p>
             </a>
           </li>
-          <li id="primary-menu-osushiteli-ochistite-uvlazhniteli" class="">
-            <a href="/osushiteli-ochistite-uvlazhniteli/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/cf28668076ae1cfafc9119c667b15de3.png" alt="">
+          <li>
+            <a href="#" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/cf28668076ae1cfafc9119c667b15de3.png" alt="">
               <p>Осушители, очистители, увлажнители</p>
             </a>
           </li>
-          <li id="primary-menu-elektrichestvo" class="">
-            <a href="/elektrichestvo/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/95fe53d550b2e77b28c8ee31631d6285.png" alt="">
+          <li>
+            <a href="#" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/95fe53d550b2e77b28c8ee31631d6285.png" alt="">
               <p>Электричество</p>
             </a>
           </li>
-          <li id="primary-menu-promotion" class=" last">
-            <a href="/promotion/" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/e60dbcd2cb02e2fbe0bce9e5d112aa97.png" alt="">
+          <li class="last">
+            <a href="#" class="menu-item "><img src="<?php echo get_template_directory_uri(); ?>/img/e60dbcd2cb02e2fbe0bce9e5d112aa97.png" alt="">
               <p>Акции</p>
             </a>
           </li>
@@ -48,7 +49,11 @@
               <div class="visible-sm no-margin-top padding-bottom-20"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo_grey.png"></div>
               <div class="tel-number no-padding-side margin-bottom-15 text-center no-margin-top">
                 <div class="dropdown tel-list">
-                  <a class="tel-number" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/img/arrow.png">&ensp;<span class="hide-mobile">(044) 223-7-223</span><img class="phone-icon" src="<?php echo get_template_directory_uri(); ?>/img/phone.png"></a>
+                  <a class="tel-number" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="hide-mobile" src="<?php echo get_template_directory_uri(); ?>/img/arrow.png">&ensp;
+                    <span class="hide-mobile">(044) 223-7-223</span>
+                    <img class="phone-icon" src="<?php echo get_template_directory_uri(); ?>/img/phone.png">
+                  </a>
                   <ul class="dropdown-menu tel-number-dropdown">
                     <li class="tel-number">&ensp;(066) 366-43-20</li>
                     <li class="tel-number">&ensp;(063) 397-02-64</li>
@@ -97,7 +102,18 @@
               <div class="open-hours margin-bottom-10 hidden-xs hidden-sm"><img class="inline-middle" src="<?php echo get_template_directory_uri(); ?>/img/calendar_pin_big.png"><span class="inline-middle">ПН-ПТ: 9-18</span></div>
             </div>
             <div class="col-sm-6 col-md-12 col-xs-12 text-xs-center text-sm-center ">
-              <div class="footer-social-icons margin-top-bottom-10 "><span class="inline-middle"><ul class="social-icons"><li><a href="https://vk.com/alterair" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/vk.png"></a></li><li><a href="https://www.facebook.com/alterair.ua" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/fb.png"></a></li><li><a href="https://plus.google.com/+AlterairUa-maps/" rel="publisher" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/g.png"></a></li><li><a href="https://twitter.com/alterair" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/tw.png"></a></li><li><a href="https://www.instagram.com/alterair.ua/" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png"></a></li><li><a href="https://www.youtube.com/user/alterairkiev" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png"></a></li><li><a href="https://ok.ru/alterair" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/ok.png"></a></li></ul></span>
+              <div class="footer-social-icons margin-top-bottom-10 ">
+                <span class="inline-middle">
+                  <ul class="social-icons">
+                    <li><a href="https://vk.com/alterair" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/vk.png"></a></li>
+                    <li><a href="https://www.facebook.com/alterair.ua" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/fb.png"></a></li>
+                    <li><a href="https://plus.google.com/+AlterairUa-maps/" rel="publisher" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/g.png"></a></li>
+                    <li><a href="https://twitter.com/alterair" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/tw.png"></a></li>
+                    <li><a href="https://www.instagram.com/alterair.ua/" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.png"></a></li>
+                    <li><a href="https://www.youtube.com/user/alterairkiev" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/youtube.png"></a></li>
+                    <li><a href="https://ok.ru/alterair" target="_blank" class="social-icon"><img src="<?php echo get_template_directory_uri(); ?>/img/ok.png"></a></li>
+                  </ul>
+                </span>
                 <br class="visible-xs visible-sm"><span class="inline-middle">Следите за нами в социальных сетях</span></div>
             </div>
           </div>
@@ -109,7 +125,6 @@
   <?php wp_footer(); ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery_with_plugs.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.filer.min.js"></script>
-
   <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 </body>
